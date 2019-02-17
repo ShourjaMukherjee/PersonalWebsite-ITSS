@@ -1,9 +1,76 @@
+
+td{
+    padding-right: 5vw;
+    padding-bottom: 4vw;
+}
+
+.hover :hover{
+    filter: invert(1);
+}
+
+.icons{
+    position: absolute;
+    top:45%;
+    left: 28%;
+}
+
+.icons img {
+	max-height: 100%;
+	height: 100px;
+	width: 100px;
+	border-radius: 50%;
+	border-width: 20px;
+	border-color: rgba(200, 200, 200, 1);
+}
+.tv {
+    position: relative;
+    width: 100px;
+    height: 370px;
+    margin: 20px 0;
+    background: black;
+    border-radius: 50% / 10%;
+    color: white;
+    text-align: center;
+    text-indent: .1em;
+}
+.tv:before {
+    content: '';
+    position: absolute;
+    top: 10%;
+    bottom: 10%;
+    right: -5%;
+    left: -5%;
+    background: inherit;
+    border-radius: 5% / 50%;
+}
+
+.zoom {
+    background-color: none;
+    transition: transform .1s;
+    width: 10px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+.zoom:hover {
+    transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
 p.text {
     margin-left: auto;
     margin-right: auto;
     width: 50rem;
     font-size: 4rem;
-    color: yellow;
+    color: pink;
+}
+
+p.text_email {
+    margin-left: auto;
+    margin-right: auto;
+    width: 20rem;
+    font-size: 19px;
+    color: black;
+    font-family: 'Playfair+Display';
 }
 
 img.text {
@@ -21,17 +88,33 @@ body {
     background-image: url('https://media.giphy.com/media/kMkvWfdwnmHMQ/giphy.gif');
     background-size: cover;
 }
+
+h1 {
+    padding-left: 37%;
+    padding-top: 5%;
+    font-size: 70px;
+}
+
+.body_contact {
+    padding:0;
+    margin: 0;
+    font-family: 'Yatra One';
+    background-image: none;
+    background-color: pink;
+    background-size: cover;
+}
 .vertical-center {
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
 }
 
 .nav {
 	z-index: 10;
-	position: sticky;
+	position: fixed;
+    width: 100%;
 	top: 0px;
 	background-color:rgba(10, 10, 10, 1);
 }
@@ -57,7 +140,7 @@ body {
 	text-align: center;
 	text-decoration: none;
 	display: block;
-	color: yellow;
+	color: pink;
 	background-color:black;
 }
 
