@@ -133,6 +133,7 @@ h1 {
 	line-height: 1.8em;
 	float: left;
 	overflow: hidden;
+    font-family: 'Staatliches', cursive;
 }
 
 .nav a {
@@ -149,9 +150,9 @@ h1 {
 }
 
 .nav a:hover {
-	background-color: rgba(20, 20, 20, 1);
+	background-color: rgb(40,40,40);
 }
 
 .nav a:active {
-	background-color: rgba(60, 60, 60, 1;
+	background-color: rgb(70,70,70);
 }
