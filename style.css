@@ -5,6 +5,8 @@
 	padding-top:2%;
 	padding-bottom: 2%;
 	text-align: center;
+	opacity: 0.8;
+	background-image: image("img/facebookDP_n.jpg");
 }
 .content {
 	font-size: 1.2em;
@@ -151,6 +153,7 @@ h1 {
 }
 
 .nav {
+	opacity: 0.7;
 	z-index: 10;
 	position: fixed;
     width: 100%;
@@ -194,4 +197,43 @@ h1 {
 
 .nav a:active {
 	background-color: rgb(70,70,70);
+}
+
+.footer {
+	opacity: 0.8;
+	height: 1.8em;
+	background-color: pink;
+	overflow: auto;
+	bottom: 0;
+	width: 100%;
+}
+
+.footer .ft a {
+	font-size: 1.2em;
+	float: left;
+	text-decoration: none;
+	width: 19.4%;
+	text-align: center;
+	display: block;
+	color: rgba(10, 10, 10, 1);
+}
+
+.footer .rt a {
+	font-size: 1.2em;
+	float: right;
+	text-decoration: none;
+	width: 19.4%;
+	text-align: center;
+	display: block;
+	color: rgba(10, 10, 10, 1);
+}
+
+button {
+  padding: 4px;
+  background: transparent;
+  text-shadow: 1px 1px 1px #202020;
+  font-family: "Lato", sans-serif;
+  font-size: 10pt;
+  border: 1px solid lightblue;
+  color: lightblue;
 }
