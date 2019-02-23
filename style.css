@@ -144,6 +144,11 @@ h1 {
 	padding: 0;
 	margin:0;
 }
+
+.body_js{
+	background-image:none;
+	background-color: pink;
+}
 .vertical-center {
     margin: 0;
     position: absolute;
@@ -155,7 +160,7 @@ h1 {
 .nav {
 	opacity: 0.7;
 	z-index: 10;
-	position: fixed;
+	/*position: fixed;*/
     width: 100%;
 	top: 0px;
 	background-color:rgba(10, 10, 10, 1);
@@ -184,6 +189,7 @@ h1 {
 	text-decoration: none;
 	display: block;
 	color: pink;
+	float: left
 	background-color:black;
 }
 
@@ -201,7 +207,7 @@ h1 {
 
 .footer {
 	opacity: 0.8;
-	height: 1.8em;
+	height: 1.7em;
 	background-color: pink;
 	overflow: auto;
 	bottom: 0;
@@ -212,8 +218,8 @@ h1 {
 	font-size: 1.2em;
 	float: left;
 	text-decoration: none;
-	width: 19.4%;
-	text-align: center;
+	width: 17.4%;
+	text-align: left;
 	display: block;
 	color: rgba(10, 10, 10, 1);
 }
@@ -222,18 +228,15 @@ h1 {
 	font-size: 1.2em;
 	float: right;
 	text-decoration: none;
-	width: 19.4%;
-	text-align: center;
+	width: 17.4%;
 	display: block;
 	color: rgba(10, 10, 10, 1);
 }
-
-button {
-  padding: 4px;
-  background: transparent;
-  text-shadow: 1px 1px 1px #202020;
-  font-family: "Lato", sans-serif;
-  font-size: 10pt;
-  border: 1px solid lightblue;
-  color: lightblue;
+#clickcount{
+	height: 1.6em;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
