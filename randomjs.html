@@ -13,12 +13,12 @@
 			<li><a href="aboutme.html">About</a></li>
 			<li><a href="js.html">Random JS</a></li>
 			<li><a href="index.html">Home</a></li>
-			<li><a href="images.html">Photos</a></li>
+			<li><a href="photos.html">Photos</a></li>
             <li><a href="contact.html">Contact</a></li>
 		</ul>
 	</div>
     <br><br>
-    <p>FORM</p>
+    <div class="headings"> Feedback Form </div>
     <div class="form">
         <form action="/action_page.php" id="elem1">
             Name: <input type="text" name="fname" id="name">
@@ -49,18 +49,21 @@
         <input type="submit" onclick="getdata()">
     </div>
     <br><br>
-    <table id="myTable">
+    <table id="myTable" align="center">
         <tr>
-            <td>NAME</td>
-            <td>SKILL</td>
-            <td>PROFICIENCY</td>
+            <th>NAME</th>
+            <th>SKILL</th>
+            <th>PROFICIENCY</th>
+        </tr>
+        <tr>
+            <td colspan="3" id="totalrows" style="text-align:center"></td>
         </tr>
     </table>
     <div class="footer" style="position:fixed">
         <div class="ft">
-            <a href="#">Site by: Shourja Mukherjee</a>
+            <a href="#">Shourja Mukherjee</a>
         </div>
-        <button onclick="clickFunction()" id="clickcount">LIKES:0</button>
+        <button onclick="clickFunction()" id="clickcount">LIKE</button>
         <!--
         <div class="rt">
             <a href="#" style="color:pink">2019</a>

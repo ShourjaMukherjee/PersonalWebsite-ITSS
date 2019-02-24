@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
     <title>SHOURJA MUKHERJEE</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,22 +11,37 @@
     <script src="myscript.js"></script>
 </head>
 
-<body>
+<body class="body_about">
 	<div id="scrlto"></div>
-	<div class="nav">
+	<div id="navbar" class="nav">
 		<ul>
 			<li><a href="aboutme.html">About</a></li>
 			<li><a href="randomjs.html">Random JS</a></li>
-			<li><a href="#scrlto">Home</a></li>
+			<li><a href="index.html">Home</a></li>
 			<li><a href="photos.html">Photos</a></li>
             <li><a href="contact.html">Contact</a></li>
 		</ul>
 	</div>
 
-    <img class="text tv" src="img/facebookDP_n.jpg">
-    <center>
-            <p class="text">Shourja Mukherjee</p>
-    </center>
+    <div class="content_about">
+        <p>
+            Photography was a big part of my life growing up. I found pictures to be a medium that is comparable to no other. The way a moment is just stopped in time and stored forever fascinates me. Here is some of my Photography.
+        </p>
+    </div>
+    <div class="headings"> Qatar </div>
+    <div class="content_about">
+        <img id="qatar" class="photo_size" src="img/qat_1.jpg">
+        <br>
+        <button id="elem1" class="but" onclick="changepic_qat_prev()"> &ltPrevious </button>
+        <button id="elem2"  onclick="changepic_qat_next()"> Next&gt </button>
+    </div>
+    <div class="headings"> India </div>
+    <div class="content_about">
+        <img id="india" class="photo_size" src="img/ind_1.jpg">
+        <br>
+        <button id="elem1" class="but" onclick="changepic_ind_prev()"> &ltPrevious </button>
+        <button id="elem2" onclick="changepic_ind_next()"> Next&gt </button>
+    </div>
     <div class="footer" style="position:fixed">
         <div class="ft">
             <a href="#">Shourja Mukherjee</a>
