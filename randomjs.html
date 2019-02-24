@@ -6,7 +6,6 @@
     <link rel="stylesheet" href="style.css"></link>
     <link href="https://fonts.googleapis.com/css?family=Staatliches" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="myscript.js" ></script>
     <body class="body_js">
 	<div id="scrlto"></div>
 	<div id="navbar" class="nav" >
@@ -27,29 +26,36 @@
 
         <form action="/action_page.php" id="elem2">
             SKILL
-            <input list="browsers" name="browser" id="skill">
-            <datalist id="browsers">
-                <option value="Internet Explorer">
-                <option value="Firefox">
-                <option value="Chrome">
-                <option value="Opera">
-                <option value="Safari">
+            <input list="skills" name="browser" id="skill">
+            <datalist id="skills">
+                <option value="Coding">
+                <option value="Writing">
+                <option value="Sports">
+                <option value="Cooking">
+                <option value="Painting">
             </datalist>
         </form>
 
         <form action="/action_page.php" id="elem3">
             PROFICIENCY
-            <input list="browsers" name="browser" id="proficiency">
-            <datalist id="browsers">
-                <option value="Internet Explorer">
-                <option value="Firefox">
-                <option value="Chrome">
-                <option value="Opera">
-                <option value="Safari">
+            <input list="proficiencys" name="browser" id="proficiency">
+            <datalist id="proficiencys">
+                <option value="Bad">
+                <option value="Good">
+                <option value="Great">
+                <option value="Expert">
             </datalist>
         </form>
         <input type="submit" onclick="getdata()">
     </div>
+    <br><br>
+    <table id="myTable">
+        <tr>
+            <td>NAME</td>
+            <td>SKILL</td>
+            <td>PROFICIENCY</td>
+        </tr>
+    </table>
     <div class="footer" style="position:fixed">
         <div class="ft">
             <a href="#">Site by: Shourja Mukherjee</a>
@@ -61,6 +67,7 @@
         </div>
         -->
     </div>
+    <script src="myscript.js" ></script>
 
 </body>
 </html>

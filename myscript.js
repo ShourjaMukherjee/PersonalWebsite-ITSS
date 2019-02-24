@@ -24,7 +24,7 @@ $(document).ready(function(){
   });
 });
 
-//TABLE STORAGE
+//INITIALIZING TABLE
 var dict=localStorage.getItem('dict');
 if (dict==null)
     dict={};
@@ -34,6 +34,31 @@ else {
 var count=localStorage.getItem('count');
 if (isNaN(count))
     count=0;
+
+//console.log(count);
+
+
+function myFunction(count) {
+    var table = document.getElementById("myTable");
+    console.log(count);
+    var row = table.insertRow(count);
+    var cell1 = row.insertCell(0);
+    var cell2 = row.insertCell(1);
+    var cell3= row.insertCell(2);
+    var listtemp=dict[String(count)];
+    cell1.innerHTML =listtemp["name"];
+    cell2.innerHTML = listtemp["skill"];
+    cell3.innerHTML= listtemp["proficiency"];
+}
+
+function initializeTable(){
+    for(var i=1;i<=count;i++){
+        console.log(i);
+        myFunction(i);
+    }
+}
+initializeTable();
+//TABLE STORAGE
 function getdata(){
     count++;
     var name=document.getElementById("name").value;
@@ -61,9 +86,10 @@ function getdata(){
     //list=JSON.stringify(list);
     //var info=JSON.parse(list);
     //console.log(info[1]);
+    myFunction(count);
     localStorage.setItem('count',count);
     localStorage.removeItem('dict');
     localStorage.setItem('dict',JSON.stringify(dict));
-    console.log(dict["2"]);
+    //console.log(dict["2"]);
     console.log(count);
 }
