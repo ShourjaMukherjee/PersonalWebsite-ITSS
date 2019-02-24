@@ -6,12 +6,9 @@
     <link rel="stylesheet" href="style.css"></link>
     <link href="https://fonts.googleapis.com/css?family=Staatliches" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
     <script src="myscript.js" ></script>
-
-<body class="body_js">
+    <body class="body_js">
 	<div id="scrlto"></div>
-
 	<div id="navbar" class="nav" >
 		<ul>
 			<li><a href="aboutme.html">About</a></li>
@@ -22,8 +19,36 @@
 		</ul>
 	</div>
     <br><br>
-    <div style="padding-top:2%">
-        <p id="demo">HELLO</p>
+    <p>FORM</p>
+    <div class="form">
+        <form action="/action_page.php" id="elem1">
+            Name: <input type="text" name="fname" id="name">
+        </form>
+
+        <form action="/action_page.php" id="elem2">
+            SKILL
+            <input list="browsers" name="browser" id="skill">
+            <datalist id="browsers">
+                <option value="Internet Explorer">
+                <option value="Firefox">
+                <option value="Chrome">
+                <option value="Opera">
+                <option value="Safari">
+            </datalist>
+        </form>
+
+        <form action="/action_page.php" id="elem3">
+            PROFICIENCY
+            <input list="browsers" name="browser" id="proficiency">
+            <datalist id="browsers">
+                <option value="Internet Explorer">
+                <option value="Firefox">
+                <option value="Chrome">
+                <option value="Opera">
+                <option value="Safari">
+            </datalist>
+        </form>
+        <input type="submit" onclick="getdata()">
     </div>
     <div class="footer" style="position:fixed">
         <div class="ft">
@@ -34,7 +59,7 @@
         <div class="rt">
             <a href="#" style="color:pink">2019</a>
         </div>
-    -->
+        -->
     </div>
 
 </body>
